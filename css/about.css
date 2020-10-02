@@ -1,0 +1,117 @@
+.about{
+	margin: 0;
+	padding: 0;
+	font-family: 'poppins', sans-serif;
+	min-height: 100vh;
+	display: flex;
+	justify-content: center;
+}
+
+.about .container{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+}
+
+.about .container .box{
+	position: relative;
+	width: 250px;
+	height: 400px;
+	padding: 60px;
+	background: #fff;
+	box-shadow: 0 5px 15px rgba(0,0,0,.3);
+	border-radius: 25px;
+	margin: 20px;
+	box-sizing: border-box;
+	overflow: hidden;
+	text-align: center;
+}
+/*
+.about .container .box:before{
+	content: '';
+	width: 50%;
+	height: 100%;
+	position: absolute;
+	top: 0;
+	left: 0;
+	background: rgba(255,255,255,0.1);
+	z-index: 2;
+}*/
+
+.about .container .box .icon{
+	position: relative;
+	width: 80px;
+	height: 80px;
+	color: #fff;
+	background: #000;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin: 0 auto;
+	border-radius: 50%;
+	font-size: 30px;
+	font-weight: 700;
+	transition: 1s;
+}
+
+.about .container .box:nth-child(1) .icon{
+	box-shadow: 0 0 0 0 #e91e63;
+	background: #e91e63;
+}
+
+.about .container .box:nth-child(1):hover .icon{
+	box-shadow: 0 0 0 400px #e91e63;
+}
+
+.about .container .box:nth-child(2) .icon{
+	box-shadow: 0 0 0 0 blue;
+	background: blue;
+}
+
+.about .container .box:nth-child(2):hover .icon{
+	box-shadow: 0 0 0 400px blue;
+}
+
+.about .container .box:nth-child(3) .icon{
+	box-shadow: 0 0 0 0 green;
+	background: green;
+}
+
+.about .container .box:nth-child(3):hover .icon{
+	box-shadow: 0 0 0 400px green;
+}
+
+.about .container .box .content{
+	position: relative;
+	z-index: 1;
+	transition: .5s;
+}
+
+.about .container .box:hover .content{
+	color: #fff;
+	text-align: center;
+}
+
+.about .container .box .content h3{
+	font-size: 20px;
+	margin: 10px 0;
+	padding: 0;
+}
+
+.about .container .box .content p{
+	margin: 0;
+	padding: 0;
+	font-size: 15px;
+}
+
+.about .container .box .content a{
+	display: inline-block;
+	padding: 10px 20px;
+	background: #fff;
+	border-radius: 10px;
+	text-decoration: none;
+	color: #000;
+	font-weight: 500;
+	margin-top: 10px;
+	box-shadow: 0 2px 5px rgba(0,0,0,0.3);
+}

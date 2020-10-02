@@ -1,0 +1,73 @@
+.album{
+	margin: 0;
+	padding: 0;
+	font-family: "montserrat", sans-serif;
+	box-sizing: border-box;
+	background: #f1f1f1;
+}
+
+.album .galery-section{
+	width: 100%;
+	padding: 60px 0;
+}
+
+.album .galery-section .inner-width{
+	width: 100%;
+	max-width: 1200px;
+	margin: auto;
+	padding: 0 20px;
+}
+
+.album .galery-section .inner-width h3{
+	text-align: center;
+	text-transform: uppercase;
+	color: #333;
+}
+
+.album .galery-section .inner-width .border{
+	width: 180px;
+	height: 4px;
+	background: #333;
+	margin: 30px auto;
+}
+
+.album .galery-section .inner-width .galery{
+	display: flex;
+	flex-wrap: wrap-reverse;
+	justify-content: center;
+}
+
+.album .galery-section .inner-width .galery .image{
+	flex: 25%;
+	overflow: hidden;
+	cursor: pointer;
+}
+
+.album .galery-section .inner-width .galery .image img{
+	width: 100%;
+	height: 100%;
+	transition: 0.4s;
+}
+
+.album .galery-section .inner-width .galery .image:hover img{
+	transform: scale(1.4) rotate(15deg);
+}
+
+
+@media screen and (max-width: 960px){
+	.album .galery-section .inner-width .galery .image{
+		flex: 33.33%;
+	}
+}
+
+@media screen and (max-width: 768px){
+	.album .galery-section .inner-width .galery .image{
+		flex: 50%;
+	}
+}
+
+@media screen and (max-width: 480px){
+	.album .galery-section .inner-width .galery .image{
+		flex: 100%;
+	}
+}
